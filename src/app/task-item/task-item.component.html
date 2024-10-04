@@ -1,0 +1,8 @@
+@if(task)
+{
+<li (click)="switch()" [class.done]="task.complete === true">
+    {{task.id}}.  {{task.title}}
+    <span class="deadline"> {{task.deadline | date}}</span>
+</li>
+
+}

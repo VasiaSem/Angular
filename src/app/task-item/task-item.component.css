@@ -1,0 +1,57 @@
+li.important::before {
+    content: "!";
+    margin: 0 8px;
+    color: rgb(187, 41, 41);
+    display: inline-block;
+}
+
+
+li .deadline {
+    background-color: rgb(120, 153, 164);
+    color: white;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+
+/* .todo_list li::before {
+    content: url(materials_hw_module_2/icons/unchecked_16.png);
+    display: inline-block;
+    margin-right: 20px;
+}
+.todo_list li.done::before {
+    content: url(materials_hw_module_2/icons/checked_16.png);
+    display: inline-block;
+    margin-right: 20px;
+} */
+
+
+li {
+    padding: 12px;
+    padding-left: 40px;
+    list-style: inside url(../../../assets/unchecked_16\ 1.png);
+}
+
+
+li:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+
+li:nth-child(even) {
+    background-color: rgb(174, 216, 229);
+}
+
+
+li:nth-child(odd) {
+    background-color: rgb(51, 138, 168);
+}
+
+
+li.done {
+    background-color: rgb(226, 226, 226);
+    list-style: inside url(../../../assets/checked_16\ 1.png);
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
